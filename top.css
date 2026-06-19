@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+/* ブレイクポイント
+SP ～519px
+tab 520～959px
+PC 960PX～
+*/
+
+/*********************
+キーピクチャー設定
+*********************/
+.key_picture {
+  width:100vw;
+  margin-top:26vh;
+}
+
+.key_picture .key_picture_inner {
+  display: block;
+  align-items: center;
+}
+.key_picture .key_picture_inner img {
+width: 100vw;
+
+}
+
+@media screen and (min-width:960px) {
+ 
+  .key_picture {
+  height: 100vh;
+  margin-top:25vh ;
+  margin-bottom:10vh;
+}
+  .key_picture .key_picture_inner {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .key_picture .key_picture_inner img {
+    width: 100%;
+}
+}
+
+/*********************
+コンセプト
+*********************/
+
+.about{
+  display: block;
+  height:auto;
+ 
+}
+
+#about_us {
+  text-align: left;
+  color: var(--text-color);
+  font-size: var(--size-lg);
+  padding: var(--contents-gutter);
+
+}
+.about_text {
+  color: var(--text-color);
+  font-size: var(--size-sm);
+  padding: var(--contents-gutter)var(--contents-gutter);
+  text-align: left;
+}
+
+@media screen and (min-width:960px) {
+ 
+ .about {
+  margin-top:250vh;
+  text-align: center;
+  color: var(--text-color);
+  font-size: var(--size-lg);
+  padding-left: var(--contents-gutter);
+  padding-right: var(--contents-gutter);
+}
+ .about_text {
+  padding-left: var(--contents-gutter);
+  padding-right: var(--contents-gutter);
+}
+}
+/*====== min-width:960px ここまで ======*/
+
+/*********************
+new セクション
+*********************/
+
+.new .new_inner {
+  
+  padding: var(--contents-gutter) 0;
+}
+.new .new_inner img{
+  display: block;
+  margin: 0;
+}
+
+ .new .new_inner p {
+font-size: var(--size-md);
+margin: var(--contents-gutter) var(--contents-gutter) 0;
+ }
+
+.new .theme_inner {
+  display: block;
+  padding: var(--contents-side-gutter) 0 ;
+  margin: var(--contents-gutter) 0;
+}
+.new .theme_inner img{
+  display: flex;
+  padding: 0 ;
+  margin-bottom: var(--contents-gutter);
+width: max-content;
+}
+
+.new .theme_discription {
+  display : flexbox;
+  padding: 0 var(--contents-gutter) var(--contents-gutter);
+  margin-bottom: var(--contents-gutter);
+  justify-content: space-around;
+}
+
+.new h3{
+  margin-bottom: var(--contents-gutter);
+  font-size: var(--size-lmd);
+}
+
+/*********************
+inspiration セクション
+*********************/
+
+.inspiration {
+  background-color: var(--backgroundbeige-color);
+  padding-bottom: 4vh;
+}
+
+.inspiration .inspiration_inner  {
+  margin-bottom: var(--contents-gutter);
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: var(--contents-side-gutter);
+}
+
+.inspiration .slider li {
+  display:flex;
+  flex-direction: column;
+}
+.inspiration a{
+   font-size: var(--size-smd);
+   margin: var(--contents-side-gutter)var(--section-gutter);
+   background-color:var(--white-color);
+   border-color:var(--white-color);
+   border-radius: 5px;
+}
+
+.inspiration .clipping{
+  opacity:0;
+  object-fit:cover;
+}
+
+@media screen and (min-width:960px) {
+
+  .inspiration {
+    padding: var(--section-gutter) 0;
+  }
+.inspiration .slider{
+  display:grid;
+  /*justify-content: space-around;*/
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding: var(--gutter-base) 3vw;
+}
+
+.inspiration .clipping{
+
+  justify-content: space-around;
+  padding: var(--gutter-base) 0.2vw;
+  flex-direction: column;
+  /*opacity:0;
+  object-fit:cover;*/
+}
+.inspiration a{
+   margin: var(--contents-side-gutter)var(--section-gutter-pc);
+}
+}
+
+/*====== min-width:960px ここまで ======*/
+
+/*********************
+technique セクション
+********************
+
+.technique {
+  padding: var(--contents-gutter) 0;
+  
+}
+.technique .technique_inner {
+  height: 85vh;
+  background-color: var( --almondbeige-color);
+  padding: var(--contents-gutter) ;
+  font-family: var(--font-sans_staatliches);
+  
+}
+
+.technique .technique_inner li1{
+ font-size: var(--size-xl);
+ margin-bottom: 0;
+  padding: 0;
+  display: block;
+  color: var(--indigoblue-color);
+}
+.technique .technique_inner li2{
+ font-size: var(--size-xl);
+ margin-bottom: 0;
+padding: 0;
+display: block;
+  color: var(--text-color2);
+position: right;
+align-items: center;
+}
+.technique .technique_inner li3{
+ font-size: var(--size-xl);
+ margin-bottom: 0;
+  padding: 0;
+  display: block;
+  color: var(--earthbrown-color);
+}
+.technique .technique_inner li4{
+ font-size: var(--size-xl);
+ margin-bottom: 0;
+  padding: 0;
+  display: block;
+  color: var(--sagegreen-color);
+}
+.technique .technique_inner li5{
+ font-size: var(--size-xl);
+ margin-bottom: 0;
+  padding: 0;
+  display: block;
+  color: var(--earthpink-color);
+}
+
+.technique .message {
+background-color: var(--backgroundgreen-color);
+ font-size: calc(var(--size-xl));
+ font-family: var(--font-sans_staatliches);
+ margin-bottom: 100;
+padding:5vh 5vw;
+display: block;
+  color: var(--text-color);
+  align-items: center;
+
+}*/
+
+/*********************
+workshop セクション
+*********************/
+
+.workshop {
+  font-size: var(--size-lg);
+  margin: var(--contents-gutter);
+  align-items: center;
+}
+.workshop .ws_title {
+  font-size: var(--size-xl);
+  display: flex;
+  margin:3vh 0;
+  align-items: left;
+}
+.workshop .ws_inner {
+  display: block;
+  justify-content: center;
+  padding: 0;
+}
+
+.new_ws_button{
+  font-size: var(--size-md);
+  color: var(--earthbrown-color);
+  margin: 0; 
+  border: 1px solid var(--earthbrown-color);
+  padding: 5px 14px;
+  border-radius: 5px;
+line-height: 1.3;
+margin-bottom: var(--contents-gutter);
+align-items: left;
+}
+.workshop .sunday_ws{
+  font-size: var(--size-lg);
+  color: var(--text-color);
+}
+.workshop .ws_knitting{
+  font-size: calc(var(--size-smd)*1.2);
+  color: var(--earthpink-color);
+  padding: 1vh 0;
+}
+.workshop .ws_info_jp{
+  font-size: var(--size-sm);
+  color: var(--text-color);
+   margin-top: 3vh;
+}
+.ws_info_en{
+  font-size: calc(var(--size-sm)*1.2);
+  color: var(--text-color);
+  font-family:  var(---font-sans_raleway);
+  margin-top: 3vh;
+}
+.workshop .workshop_item {
+  display: block;
+  justify-content: center;
+  padding:5vh 0;
+}
+.workshop a{
+    font-size: var(--size-smd); 
+    border-radius: 5px;
+}
+
+.workshop .picture{
+   margin:o;  
+}
+
+@media screen and (min-width:960px) {
+
+.workshop {
+  font-size: var(--size-lg);
+  margin: var(--contents-gutter);
+  align-items: center;
+  padding: 5px 5px;
+}
+
+  .workshop .ws_title {
+  font-size: var(--size-xl);
+  display: flex;
+  margin:8vh 0;
+  align-items: left;
+}
+}
