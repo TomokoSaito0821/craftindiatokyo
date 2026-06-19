@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+
+    <title>craftindia</title>
+
+    <!-- Google Fonts -->
+     <!-- Noto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+ <!-- Jaro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap"
+      rel="stylesheet"
+    />
+  <!-- Staatliches -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+<!--Raleway-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOSのCSS読み込み -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward,keyboard_arrow_right"
+    />
+
+    <link rel="stylesheet" href="css/common/reset.css" />
+    <link rel="stylesheet" href="css/common/under.css" />
+    <link rel="stylesheet" href="css/common/animate.css" />
+    <link rel="stylesheet" href="css/page/event.css" />
+    <link rel="stylesheet" href="css/page/product.css" />
+     <link rel="stylesheet" href="css/page/top.css" />
+    <link rel="stylesheet" href="css/common/common.css" />
+     <link rel="stylesheet" href="css/page/contact.css" />
+     
+
+    <!-- SlickSlider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
+    />
+  </head>
+
+<body>
+  <header>
+      <div class="header_inner">
+        <h1><a href="index.html"><img src="image/craftindia_logo.png" alt="craftindia_logo"></a></h1>
+        
+
+          <!-- ハンバーガーメニュー2 -->
+           <div id="gnav_drawer">
+          <input id="nav_input" class="none" type="checkbox">
+            <label id="nav_input_open" for="nav_input">
+            <span></span><span></span><span></span>
+            </label>
+            <label id="nav_input_close" for="nav_input">
+            </label>
+<nav class="header_nav">
+          <ul>
+            <li><a href="index.html#about_us">about</a></li>
+            <li><a href="product.html">products</a></li>
+            <li><a href="workshop.html">workshop</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+    </header>
+
+    <main>
+
+    <h1>お問合せフォーム</h1>
+    <p class="form_comment">下記のフォームより必要事項をご記入の上、<br>お問い合わせください。</p>
+        <dl>
+            <div class="form-item">
+
+                <dt>
+                    <lavel for="username">お名前</lavel>
+                </dt>
+                <dd><input type="text" name="username" id="username"></dd>
+            </div>
+
+            <div class="form-item">
+                <dt><label for="usermail">メールアドレス</label>
+                </dt>
+                <dd><input type="email" name="useremail" id="usermail"></dd>
+
+            </div>
+
+            <div class="form-item">
+
+                <dt>お問合せ種別</dt>
+                <dd>
+                    <label class="label-radio"><input type="radio" name="" value="商品について">商品について</label><br>
+                    <label class="label-radio"><input type="radio" name="" value="デザインのご依頼">デザインのご依頼</label><br>
+                    <label class="label-radio"><input type="radio" name="job" value="コンサルティングのご相談" >コンサルティングのご相談</label><br>
+                    <label class="label-radio"><input type="radio" name="job" value="その他" >その他</label>
+                </dd>
+            </div>
+
+            <div class="form-item">
+
+            
+            <div class="form-item">
+                <dt><label for="content">お問い合せ内容</label></dt>
+                <dd><textarea name="message" id="content"></textarea></dd>
+            </div>
+        </dl>
+        <div class="form-submit">
+            <input type="submit" value="送信" id="submit">
+        </div>
+
+</main>
+
+<footer>
+            <nav>
+          <ul>
+            <li><a href="index.html#about_us">about</a></li>
+            <li><a href="product.html">products</a></li>
+            <li><a href="workshop.html">workshop</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer_info">
+          <p>&copy; 2026 craft india. All rights reserved.</p>
+        </div>
+        <div class="footer_logo"><h1>craft india</h1></div>
+
+        <div class="sns_icon">
+                    <picture>
+                        <source srcset="image/sns_icon/icons8-facebook.svg" type="image/webp">
+                        <img src="image/sns_icon/icons8-facebook.svg" alt="facebook">
+                    </picture>
+                    <picture>
+                        <source srcset="image/sns_icon/icons8-instagram.svg" type="image/webp">
+                        <img src="image/event_image/knit_4.jpg" alt="instagram">
+                    </picture> 
+                    <picture>
+                        <source srcset="image/sns_icon/icons8-linkedin.svg" type="image/webp">
+                        <img src="image/event_image/knit_4.jpg" alt="linkedin">
+                    </picture>  
+
+                    <picture>
+                        <source srcset="image/sns_icon/icons8-pinterest.svg" type="image/webp">
+                        <img src="image/event_image/knit_4.jpg" alt="pinterest">
+                    </picture>  
+                    </div>
+
+           </footer>
+            
+
+  </body>
+</html>
+
+
+</html>

@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* ブレイクポイント
+SP ～519px
+tab 520～959px
+PC 960PX～
+*/
+
+/*********************
+設定
+*********************/
+
+.product {
+ margin-top: 350px;
+  margin-bottom: 10vh;
+  width:100vw;
+
+}
+.season
+    {
+        display: block;
+        justify-content: right;
+        margin-bottom: 14vh;
+        text-align: center;
+        margin-left:40%
+    }
+.year {
+    font-size: var(--size-xl);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+}
+.season_title {
+    
+    font-size: var(--size-smd);
+    color: var(--text-color);
+    margin:1vh 0 ;
+
+}
+
+.season p {
+    font-size: var(--size-smd);
+    color: var(--text-color);
+    margin-top: 3px;
+}
+
+.product_list {
+    text-align: center;
+}
+
+.colour_discription {
+    font-size: var(--size-smd);
+    color: var(--text-color);
+    text-align: left;
+    margin-left:1vw;
+
+}
+
+.product_content {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+li {
+  list-style-type: none;
+}
+.product_image {
+display: flex;
+margin-top: 5vh;
+}
+
+.product_image img{
+width: 60%;
+margin-bottom: 10vh;
+margin-left: var(--contents-side-gutter)
+}
+.product_image p{
+    font-size: var(--size-sm);
+    line-height: 1.3;
+    color: var(--text-color);
+    margin-bottom: 10vh;
+    padding-left:2vw;
+    text-align: left;
+}
+
+.product_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+margin: bottom 5vh;
+
+}
+
+.product_box {
+    flex: calc(100%/2 - 5%);
+    padding: 20px 20px 20px;
+    justify-content: center;
+    margin: 5px;
+    border: 0.5px solid var(--earthbrown-color);
+    text-align: center;
+}
+.product_box h4 {
+    font-size: calc(var(--size-sm)*1.1);
+    color: var(--text-color);
+    padding: 0;
+}
+.product_box p {
+    width: 100%;
+    padding:0;
+    font-size: var(--size-sm);
+}
+.product_box img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+@media screen and (min-width:960px){
+.season
+    {
+        display: block;
+        justify-content:left;
+        margin-bottom: 14vh;
+        text-align: left;
+        margin-left:var(--contents-gutter)
+    }
+.year {
+    font-size: calc(var(--size-xxl)*1.5);
+    color: var(--text-color);
+  text-align:lift;
+}
+.season_title {
+    
+    font-size: var(--size-lmd);
+    color: var(--text-color);
+    margin:1vh 0 ;
+
+}
+
+.season p {
+    font-size: var(--size-smd);
+    color: var(--text-color);
+    margin-top: 3px;
+}
+
+
+.product_image p{
+    font-size: var(--size-smd);
+    line-height: 1.3;
+    color: var(--text-color);
+    margin-bottom: 10vh;
+    padding-left:4vw;
+    text-align: left;
+}
+}

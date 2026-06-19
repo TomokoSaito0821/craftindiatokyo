@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/*
+幅設定参考
+smart phone ~519px
+tabret 520~959px
+PC 960px  */
+
+
+/* レイアウト */
+
+/*モバイル用CSS*/
+
+main{
+    margin-top: 38vh;
+}
+
+h1 {
+    font-size: var(--size-md);
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom:var(--contents-gutter);
+    font-family: var(--font-serif);
+}
+
+.form_comment{
+    font-size: var(--size-sm);
+    color: var(--text-color);
+    text-align: center;
+    margin:var(--contents-gutter) var(--contents-side-gutter);
+    font-family: var(--font-serif);
+
+}
+   
+    dl {
+        width: 85%;
+        margin: 0 5vw 0 5vw ;
+    }
+
+    .form-item {
+        display: block;
+        width:90vw;
+        margin-top: 3vh;
+    }
+
+    dt {
+        width: 100%;
+    }
+
+    dd {
+        width: 100%;
+    }
+.label-radio {
+    font-size: calc(var(--size-sm)*.8);
+    margin-left: var(--contents-gutter);
+}
+
+dt,
+dd,
+select,
+input,
+textarea {
+    font-family: var(--font-serif);
+    font-size: var(--size-smd);
+    text-align: left;
+    width:100%;
+}
+
+dt::before {
+    content: "*";
+    color: var(--indigoblue-color);
+    padding-right: 1vw;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+select {
+    height: 2em;
+}
+
+.label-radio {
+    margin-right: 1em;
+    font-size: var(--size-sm);
+}
+
+input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+textarea {
+    min-height: 200px;
+
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 40px;
+}
+
+input[type="submit"] {
+    background: var(--earthbrown-color);
+    width: 200px;
+    padding: 0.5em;
+    color: #fff;
+    font-size: var(--size-sm);
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 7vh;
+}
+input[type="submit"]:hover {
+        background: #f78166;
+    }
+
+
+/*pc用CSS*/
+
+@media screen and (min-width:960px) {
+body {
+    background: var(--background-color);
+}
+
+main h1 {
+    font-size:var(--size-md);
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom :var(--contents-gutter-pc) ;
+    font-family: var(--font-serif);
+}
+
+form {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    background: var(--background-color);
+    padding: 40px 0;
+}
+
+.form_comment{
+    margin:var(--contents-gutter) var(--contents-side-gutter)var(--contents-gutter-pc);
+}    
+
+dl {
+    margin: 0 0 0 5vw ;
+    
+}
+
+.form-item {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+    color: var(--text-color);
+    text-align: left;
+}
+
+dt {
+    width: 200px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+dd {
+    width: 70vw;
+    
+}
+label .label-radio {
+    font-size: var(--size-smd);
+    margin-left: var(--contents-gutter);
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    font-size: var(--size-md);
+    margin-left:var(--contents-gutter);
+    text-align: left;
+    margin-right: 5vw;
+}
+
+.form-submit {
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+        background: #f78166;
+    }
+}
